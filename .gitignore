@@ -6,3 +6,9 @@ node_modules/
 
 # prod
 dist/
+
+# env
+.env
+
+# db
+*.db
