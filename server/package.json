@@ -3,7 +3,7 @@
   "scripts": {
     "d": "tsx watch src/server-demo-drizzle.ts",
     "b": "tsc",
-    "p": "node src/server-demo-drizzle.js",
+    "p": "node dist/src/server-demo-drizzle.js",
     "db:push": "drizzle-kit push && tsx src/db/init.ts",
     "db:studio": "drizzle-kit studio"
   },
