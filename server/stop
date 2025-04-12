@@ -1,9 +1,9 @@
 #! /bin/sh
 
-PROCESS_ID=$(ps x | grep 'node src/demo-drizzle.js' | grep -v grep | awk '{print $1}')
+PROCESS_ID=$(ps x | grep 'node src/server-demo-drizzle.js' | grep -v grep | awk '{print $1}')
 if [ ! -z "$PROCESS_ID" ];
 then
-    pkill -9 -f 'node src/demo-drizzle.js'
+    pkill -9 -f 'node src/server-demo-drizzle.js'
 else
     echo "Server is not running"
 fi
